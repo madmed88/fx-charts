@@ -1,0 +1,7 @@
+.Sidebar {
+  flex-shrink: 0;
+  height: 100%;
+  width: 30%;
+  border-right: 1px solid #ececec;
+  background-color: #f7f7f7;
+}

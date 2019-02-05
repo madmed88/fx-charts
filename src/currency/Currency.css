@@ -1,0 +1,82 @@
+.Base-currency, .Currency-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.Base-currency-title, .Base-currency-select {
+  height: 32px
+}
+
+.Base-currency-title {
+  color: #5353b1;
+  font-size: 24px;
+}
+
+.Base-currency-select {
+  font-size: 16px;
+  width: 50%;
+}
+
+.Currency-item {
+  cursor: pointer;
+}
+
+.Currency-item:hover,
+.Currency-item:focus, .Currency-item.selected {
+  background-color: white;
+}
+
+.Currency-item.up {
+  border-left: 8px solid #1ecd93;
+}
+
+.Currency-item.up .Currency-item-change {
+  color: #1ecd93;
+}
+
+.Currency-item.down {
+  border-left: 8px solid #ff433d;
+}
+
+.Currency-item-change {
+  text-align: right;
+}
+
+.Currency-item.down .Currency-item-change {
+  color: #ff433d;
+}
+
+.Currency-item .Currency-item-change:after {
+  position: relative;
+  content: "";
+  left: 5px;
+  border-style: solid;
+}
+
+.Currency-item.down .Currency-item-change:after {
+  top: 17px;
+  border-width: 10px 5px 0;
+  border-color: #ff433d transparent transparent;
+}
+
+.Currency-item.up .Currency-item-change:after {
+  top: -14px;
+  border-width: 0 5px 10px;
+  border-color: transparent transparent #1ecd93;
+}
+
+.Currency-item.up .Currency-item-change:before {
+  content: "+";
+}
+
+.Currency-item-labels {
+  text-align: left;
+}
+
+.Currency-item-symbol, .Currency-item-value {
+  font-size: 24px;
+}
